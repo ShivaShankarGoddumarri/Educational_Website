@@ -1,0 +1,87 @@
+/* FontAwesome Icons */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.linkedin-navbar {
+  background-color: #fff;
+  color: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.linkedin-navbar-brand {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0077b5;
+}
+
+.linkedin-navbar-menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.linkedin-navbar-menu li {
+  margin-right: 20px;
+}
+.linkedin-navbar-menu i {
+  font-size: 24px;
+}
+.linkedin-navbar-menu a {
+  font-size: 10px;
+  font-weight: lighter;
+}
+.linkedin-navbar-menu li a {
+  color: gray;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+  gap: 6px;
+}
+
+.linkedin-navbar-menu li a i {
+  margin-right: 5px;
+  color: gray;
+}
+
+.linkedin-navbar-menu li a:hover,
+.linkedin-navbar-menu li.active a {
+  color: black;
+}
+
+.linkedin-navbar-menu li a:hover i,
+.linkedin-navbar-menu li.active a i {
+  color: black;
+}
+
+.linkedin-navbar-menu li.active a {
+  color: black;
+}
+
+.linkedin-navbar-menu li a {
+  position: relative;
+}
+
+.linkedin-navbar-menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  width: 100%;
+  height: 1.8px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.linkedin-navbar-menu li.active a::after {
+  background-color: black;
+}
